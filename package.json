@@ -1,0 +1,30 @@
+{ "name": "mapfuncs",
+  "version": "0.1.0",
+  "description": "Collect result of each function for given arguments and context.",
+  "keywords": [
+    "array",
+    "event",
+    "function",
+    "list",
+    "map",
+    "subscribers"
+  ],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/mapfuncs-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/mapfuncs-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/mapfuncs-js/issues"
+  },
+
+  "private": false, "license": "ISC",
+
+  "main": "mapfuncs.js",
+  "scripts": { "test": "nodejs test.js" },
+
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+}
