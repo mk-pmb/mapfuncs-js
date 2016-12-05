@@ -4,19 +4,7 @@
 
 var expect = require('assert').deepStrictEqual;
 
-function typeOf(x) {
-  if (x === undefined) { return 'undef'; }
-  if (x === null) { return 'null'; }
-  var t = typeof x;
-  t = (t === 'object' ? Object.prototype.toString.call(x).slice(8, -1)
-    : t.slice(0, 3));
-  return t;
-}
-
-function ignore() { return ''; }
-
-(function readmeDemo() {
-  //#u
+function readmeDemo(typeOf) {
   var mapFuncs = require('mapfuncs'), funcs = [
     function upper(s) { return String(s).toUpperCase(); },
     function meta(s) { return typeOf(s) + ':' + (s || '').length; },
@@ -64,10 +52,17 @@ function ignore() { return ''; }
   funcs.splice(2);
   funcs[1] = encodeURIComponent;
   expect(proxy(smiley), [ ':-)', '%3A-)' ]);
+}
 
-  //#r
 
-}());
+readmeDemo(function typeOf(x) {
+  if (x === undefined) { return 'undef'; }
+  if (x === null) { return 'null'; }
+  var t = typeof x;
+  t = (t === 'object' ? Object.prototype.toString.call(x).slice(8, -1)
+    : t.slice(0, 3));
+  return t;
+});
 
 
 

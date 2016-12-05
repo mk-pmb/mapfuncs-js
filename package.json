@@ -1,5 +1,5 @@
 { "name": "mapfuncs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Collect result of each function for given arguments and context.",
   "keywords": [
     "array",
